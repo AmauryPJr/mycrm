@@ -1,0 +1,91 @@
+h1, h2, h3, h4, h5{
+    line-height: 1.5;
+}
+
+p{
+    color: #8b8b8b;
+}
+
+h1{
+    font-size: 24pt;
+}
+
+h3{
+    font-size: 16pt;
+}
+
+h4{
+    font-size: 12pt;
+}
+
+/*Navbar*/
+
+.navbar{
+    background-color: #0d6efd;
+}
+
+/*Banner*/
+
+#banner{
+    background-color: #0d6efd;
+    color: #ffffff;
+    padding: 100px 0 70px 0;
+}
+
+#banner img{
+    width: 100%;
+}
+
+.btn-banner{
+    margin: 8% 3% 5% 0;
+}
+
+/*Feature Box*/
+
+#features{
+    padding: 7% 5%;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.icon {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/*Testemunhos*/
+
+#testemunho{
+    background-color: #f3f3f3;
+    color: #323338;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#testemunho img{
+    border-radius: 50%;
+    width: 10%;
+    margin: 20px;
+}
+
+/*Preços*/
+
+#preco.titulo{
+    margin-top: 5%;
+}
+
+#preco{
+    padding: 5% 15% 8%;
+    color: #323338;
+}
+
+/*Preços*/
+
+#footer{
+    padding: 3% 15%;
+    text-align: center;
+    background-color: #f3f3f3;
+}
