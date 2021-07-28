@@ -12,6 +12,10 @@ import NovoCliente from './app/NovoCliente/novocliente';
 import EditarCliente from './app/EditarCliente/editarcliente'
 
 function App() {
+    fetch(process.env.REACT_APP_API_URL || 'http://localhost:8080/api/v1')
+        .then(() => console.log('Deu Certo'))
+        .catch(() => console.log('Deu Erro'))
+    
     return <BrowserRouter>
         <Route exact path="/" component={Site} />
         <Route exact path="/app" component={Login} />
