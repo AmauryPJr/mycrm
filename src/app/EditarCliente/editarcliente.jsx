@@ -19,7 +19,7 @@ function EditarCliente(props) {
             setEmail(resultado.data().email);
             setFone(resultado.data().fone);
         })
-    }, [])
+    }, [props.match.params.id])
 
     function alterarCliente() {
         if (nome.length === 0) {
