@@ -13,7 +13,7 @@ function EditarCliente(props) {
     const db = firebase.firestore();
 
     useEffect(() => {
-        db.collection('clientes').doc(props.match.params.id).get()
+        firebase.firestore().collection('clientes').doc(props.match.params.id).get()
         .then((resultado) => {
             setNome(resultado.data().nome);
             setEmail(resultado.data().email);
