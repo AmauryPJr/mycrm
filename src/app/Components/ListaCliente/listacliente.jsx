@@ -2,10 +2,6 @@ import { Link } from 'react-router-dom';
 import './listacliente.css';
 
 function ListaClientes(props) {
-    function deleteUser(id) {
-        alert('Excluir usuário ' + id);
-    }
-    
     return (
         <table className="table table-hover table-bordered">
             <thead className="table-secondary">
@@ -27,7 +23,7 @@ function ListaClientes(props) {
                             <td>{cliente.fone}</td>
                             <th>
                                 <Link to={`/app/editarcliente/${cliente.id}`}><i className="fas fa-edit icone"></i></Link>
-                                <Link to="" onClick={() => deleteUser(cliente.id)}><i className="far fa-trash-alt icone red"></i></Link>
+                                <Link onClick={() => props.delecao(cliente.id)}><i className="far fa-trash-alt icone red"></i></Link>
                             </th>
                         </tr>
                     ))
